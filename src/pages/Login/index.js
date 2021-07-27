@@ -19,12 +19,9 @@ export default function Login({ navigation }) {
             <KeyboardAvoidingView style={sty.container} behavior='padding'>
                 <Text style={{
                     fontSize: 40,
-                    // fontWeight: 'bold'
                 }}>GO CAMP </Text>
                 <Image style={styles.img} source={require('../../assets/pictures/logo1.png')} />
-
                 <Text style={sty.textmuted} >{message} </Text>
-
                 <TextInput style={styles.forminput}
                     placeholder='Email'
                     value={email.value}
@@ -49,7 +46,6 @@ export default function Login({ navigation }) {
                 </TouchableHighlight>
                 <Text>Don't have on account!<Text style={{ color: 'red' }}> Register </Text></Text>
             </KeyboardAvoidingView>
-
         </View>
     )
 }

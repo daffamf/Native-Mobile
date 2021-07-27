@@ -1,7 +1,12 @@
 import React from 'react'
-import { Login } from '../pages'
+import { Login, Home } from '../pages'
 
 
-export default function Router (){
-    return <Login/>
+export default function Router() {
+    return (
+        <>
+            <Login />
+            <Home />
+        </>
+    )
 }

@@ -1,7 +1,7 @@
 import { all,takeEvery,put,call } from "@redux-saga/core/effects";
 import * as action from '../actions'
 import { request } from "../actions/connect";
-import { LOGIN,LOGOUT,PATH_API } from "../constants";
+import { LOGIN,LOGOUT,PATH_API ,HOME_DATA} from "../constants";
 
 
 
@@ -26,10 +26,10 @@ function* login(payload){
             return
         }
         yield put(action.loginSuccess(data,token,message))
-        // navigation.reset({
-        //     index:0,
-        //     routes:[{name:'Home'}]
-        // })
+        navigation.reset({
+            index:0,
+            routes:[{name:'Home Screen'}]
+        })
     } catch (error) {
         console.log(error)
         yield put (action.loginFailure(error))
@@ -37,6 +37,9 @@ function* login(payload){
     }
   
 }
+
+
+
 
 export default function* rootsaga() {
     yield all([

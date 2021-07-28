@@ -3,7 +3,7 @@ import { Text, View,ListItem } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons'
 import {BottomNavigation,Avatar } from 'react-native-paper';
 import { Calendar } from 'react-native-calendario';
-import MapView from 'react-native-maps';
+
 
 import './styles'
 

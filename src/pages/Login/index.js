@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { View, TextInput, TouchableHighlight, Text, Image, StyleSheet, KeyboardAvoidingView, ImageBackground } from 'react-native'
+import { View, TouchableHighlight, Text, Image, StyleSheet, KeyboardAvoidingView, ImageBackground } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
+import { TextInput } from 'react-native-paper';
 import { styles } from './styles'
 import { login } from '../../actions'
 
@@ -31,6 +32,7 @@ export default function Login({ navigation }) {
                     style={styles.forminput}
                     placeholder='Passwoard'
                     value={password.value}
+                    right={<TextInput.Icon name="eye" />}
                     onChangeText={text => setPassword({ value: text, erorr: '' })}
                     secureTextEntry
                 />

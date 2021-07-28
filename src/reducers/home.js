@@ -1,7 +1,7 @@
-import{
+import {
     HOME_SUCCESS,
     HOME_FAILURE
-}from '../constants'
+} from '../constants'
 
 const initialState = {
     data: false,

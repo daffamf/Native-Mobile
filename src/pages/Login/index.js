@@ -19,7 +19,7 @@ export default function Login({ navigation }) {
             <KeyboardAvoidingView style={sty.container} behavior='padding'>
                 <Text style={{
                     fontSize: 40,
-                }}>GO CAMP </Text>
+                }}>Travel Go </Text>
                 <Image style={styles.img} source={require('../../assets/pictures/logo1.png')} />
                 <Text style={sty.textmuted} >{message} </Text>
                 <TextInput style={styles.forminput}
